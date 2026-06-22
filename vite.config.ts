@@ -24,6 +24,8 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: process.env.VITE_BASE_PATH || '/store-app',
+  
   resolve: {
     alias: {
       // Alias @ to the src directory
